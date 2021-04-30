@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/color.css">
+    <link rel="stylesheet" type="text/css" href="css/gallerystyle.cs">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>  
+    <script defer src="js/menu.js"></script>
+    <script defer src="js/gallery.js"></script>
+    <script defer src="js/transition.js"></script>
+
+    <title>gallery</title>
+</head>
+<body class="color">
+    <section id="body">
+        <div class="menu-button">
+            <p id="menu-toggle" class="burger-menu">III</p>
+         </div>
+        <header id="titles">
+            <div class="title1">
+                <h1>Be The Change</h1>
+            </div>
+            <div class="title2">
+                <h1>Featured</h1>
+            </div>
+        </header>
+        <section id="slideshow">
+
+            <div class="slidebody">
+                <div class="S-button">
+                    <p id="back"><</p>
+                    <p id="forward">></p>
+                </div>
+                <img id="slideshowImage" src="img/pic.png">
+            </div>
+
+            <div class="info-boxes">
+                <div class="like"><p id="imgLike">32</p></div>
+                <div class="image-title"><p id="imgTitle">Title of the image</p></div>
+                <div class="image-date"><p id="imgDate">Date</p></div>
+            </div>
+        </section>
+        <section id="gallery">
+            <div class="gal-title">
+                <h1>All the Images</h1>
+            </div>
+            <div class="flex">
+                <img src="img/pic.png">
+                <img src="img/pic.png">
+                <img src="img/pic.png">
+                <img src="img/pic.png">
+            </div>
+        </section>
+        <div id="copyright"></div>
+        <p>copyright stuff nobody cares about</p>
+    </section>
+    <div id="LargeScreen" class="body">
+        <header class="header_main">
+            <h1 >BE THE CHANGE</h1>
+            <h2>make most of the little things</h2>
+        </header>
+        <section class="menu_main">
+            <div id="menu_main">
+                <div class="menu_main_about"><a  onClick="aboutT()">About</a>
+                    <div class="menu_main_gallery" ><a onClick="galleryT()">Gallery</a>
+                        <div class="menu_main_contacts">
+                          <a  onClick="contactT()">Contacts</a>
+                        </div>
+                        <a  onClick="galleryT()">Gallery</a>
+                    </div>
+                    <a a  onClick="aboutT()">About</a>
+                </div>
+            </div>
+    </section>
+    <div class="optionButtonsLS">
+        <div id="themeBtn" class ="themebtn"onClick="highContrast()">Contrast: Color</div>
+        <div>Fontsize: High</div>
+    </div>
+        <footer class="footer_main"></footer>
+    </div>
+    <section id="menu" style="display: none">
+        <div id="menu_l">
+            <div class="menu_l_about"><a onClick="aboutT()">About</a>
+                <div class="menu_l_gallery"><a  onClick="galleryT()">Gallery</a>
+                    <div class="menu_l_contacts">
+                      <a onClick="contactT()">Contacts</a>
+                    </div>
+                    <a onClick="galleryT()">Gallery</a>
+                </div>
+                <a onClick="aboutT()">About</a>
+            </div>
+        </div>
+        <div class="optionButtons">
+            <div id="themeBtn" class ="themebtn"onClick="highContrast()">Contrast: Color</div>
+            <div id="font-size" class="fontbtn" onClick="fontSize()">Fontsize: High</div>
+        </div>
+    </section>
+    <section id="transition" style="display: none"> <!--ANIMATION-->
+        <div id="blue"></div>
+        <div id="red"></div>
+        <div id="yellow" class="AboutStart"></div>
+    </section>
+
+    <script>
+    </script>
+</body>
+</html>

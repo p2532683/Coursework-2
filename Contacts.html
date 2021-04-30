@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/color.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>  
+    <script defer src="js/menu.js"></script>
+    <script defer src="js/contacts.js"></script>
+    <script defer src="js/transition.js"></script>
+
+
+    <title>BE THE CHANGE</title>
+</head>
+<body class="color">
+    <section id="body">
+        <div id="menu-toggle" class="menu-button about-menu-button">
+            <p class="burger-menu">III</p>
+            <h1>BE THE CHANGE</h1>
+         </div>
+        <header id="contact-header">
+            <img src="img/Sunset.jpg">
+        </header>
+        <section class="boxes">
+
+            <div class="LSbox">
+                <div id="box1" class="SMtitle">
+                    <p>Social Media</p>
+                    <p class="closed">></p>
+                    <div class="cover"></div>
+                </div>
+                <section id="box-closed" class="box-closed">
+                    <div>
+                        <img src="img/Facebook.png">
+                        <p>Ma Nam Jeff</p>
+                        <a href="https://www.facebook.com/MaNamJeff">Link To Facebook</a>
+                    </div>
+                    <div>insta</div>
+                    <div>twitter</div>
+                </section>
+            </div>
+
+            <div class="LSbox">
+                <div id="box2" class="conTitle">
+                <p>Contacts</p>
+                <p class="closed">></p>
+                <div class="cover"></div>
+            </div>
+                <section id="box-closed" class="box-closed">
+                    <div>
+                        <img src="img/Facebook.png">
+                        <p>Ma Nam Jeff</p>
+                        <a>https://www.facebook.com/MaNamJeff</a>
+                    </div>
+                    <div>insta</div>
+                    <div>twitter</div>
+                </section>
+            </div>
+
+            <div class="LSbox">
+                <div id="box3" class="reviewTitle">
+                <p>Reviews</p>
+                <p class="closed">></p>
+                <div class="cover"></div>
+            </div>
+                <section id="box-closed" class="box-closed">
+                    <div>facebook</div>
+                    <div>insta</div>
+                    <div>twitter</div>
+                </section>
+            </div>
+        </section>
+    </section>
+    <div id="LargeScreen" class="body">
+        <header class="header_main">
+            <h1 >BE THE CHANGE</h1>
+            <h2>make most of the little things</h2>
+        </header>
+        <section class="menu_main">
+            <div id="menu_main">
+                <div class="menu_main_about"><a  onClick="aboutT()">About</a>
+                    <div class="menu_main_gallery" ><a onClick="galleryT()">Gallery</a>
+                        <div class="menu_main_contacts">
+                          <a  onClick="contactT()">Contacts</a>
+                        </div>
+                        <a  onClick="galleryT()">Gallery</a>
+                    </div>
+                    <a a  onClick="aboutT()">About</a>
+                </div>
+            </div>
+    </section>
+        <footer class="footer_main"></footer>
+    </div>
+    <section id="menu" style="display: none">
+        <div id="menu_l">
+            <div class="menu_l_about"><a onClick="aboutT()">About</a>
+                <div class="menu_l_gallery"><a  onClick="galleryT()">Gallery</a>
+                    <div class="menu_l_contacts">
+                      <a onClick="contactT()">Contacts</a>
+                    </div>
+                    <a onClick="galleryT()">Gallery</a>
+                </div>
+                <a onClick="aboutT()">About</a>
+            </div>
+        </div>
+        <div class="optionButtons">
+            <div id="themeBtn">Contrast: Color</div>
+            <div>Fontsize: High</div>
+        </div>
+    </section>
+    <section id="transition" style="display: none"> <!--ANIMATION-->
+        <div id="blue"></div>
+        <div id="red"></div>
+        <div id="yellow" class="AboutStart"></div>
+    </section>
+
+</body>
+</html>

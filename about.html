@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/color.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>  
+    <script defer src="js/menu.js"></script>
+    <script defer src="js/transition.js"></script>
+
+
+    <title>BE THE CHANGE</title>
+</head>
+<body class="color">
+    <section id="body">
+        <header class="about-header">
+
+        <div id="menu-toggle" class="menu-button about-menu-button">
+           <p class="burger-menu">III</p>
+           <h1>BE THE CHANGE</h1>
+        </div>
+        <div class="gray"></div>
+        <video autoplay muted loop>
+            <source src="Traffic.mp4" type="video/mp4">
+            <source src="Traffic.ogg" type="video/ogg">
+          </video>
+        </header>
+
+        <section class="about-body">
+            <div class="about-title about1">
+                <h2>What we do?</h2>
+            </div>
+            <div class="about2 about-text">
+                <p>We create the highest quality photography projects. We specialize in developing and achiving the highest quality of work. No matter the ocasion, we are will to stand-up to the challenge in hand and overcome the struggles of the challenge</p>
+            </div>
+            <div class="about-title about3">
+                <h2>Who we are?</h2>
+            </div>
+            <div class="about4">
+                <img src="img/Jeff.jpg">
+                <div class="about4-1">
+                    <p>Name: Jeff Man<br>Age: 24 <br>Nationality: American</p>
+                </div>
+            </div>
+            <div class="about5 about-text">
+                <p>I have 8 years of experice in photography and been working in the industry full time for 6 years. Working with a camera is second nature to me. I have been trained in the field by leading experts and my work has been called some of the best</p>
+            </div>
+        </section>
+    </section>
+    <div id="LargeScreen" class="body">
+        <header class="header_main">
+            <h1 >BE THE CHANGE</h1>
+            <h2>make most of the little things</h2>
+        </header>
+        <section class="menu_main">
+            <div id="menu_main">
+                <div class="menu_main_about"><a  onClick="aboutT()">About</a>
+                    <div class="menu_main_gallery" ><a onClick="galleryT()">Gallery</a>
+                        <div class="menu_main_contacts">
+                          <a  onClick="contactT()">Contacts</a>
+                        </div>
+                        <a  onClick="galleryT()">Gallery</a>
+                    </div>
+                    <a a  onClick="aboutT()">About</a>
+                </div>
+            </div>
+    </section>
+        <footer class="footer_main"></footer>
+    </div>
+    <section id="menu" style="display: none">
+        <div id="menu_l">
+            <div class="menu_l_about"><a onClick="aboutT()">About</a>
+                <div class="menu_l_gallery"><a  onClick="galleryT()">Gallery</a>
+                    <div class="menu_l_contacts">
+                      <a onClick="contactT()">Contacts</a>
+                    </div>
+                    <a onClick="galleryT()">Gallery</a>
+                </div>
+                <a onClick="aboutT()">About</a>
+            </div>
+        </div>
+        <div class="optionButtons">
+            <div id="themeBtn">Contrast: Color</div>
+            <div>Fontsize: High</div>
+        </div>
+    </section>
+    <section id="transition" style="display: none"> <!--ANIMATION-->
+        <div id="blue"></div>
+        <div id="red"></div>
+        <div id="yellow" class="AboutStart"></div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,58 @@
+:root {
+    --blue: #33E1FF;
+    --yellow: #F3CA3E;
+    --red: #F36;
+    --font_Gray: #666;
+    --backblue: #161522;
+    --font_white: #fff;
+    --black: #000;
+}
+.color {
+    --background: var(--backblue);
+    --boxblue: var(--blue);
+    --boxyellow: var(--yellow);
+    --boxred: var(--red);
+    --font_color: var(--font_Gray);
+    --font_color2: var(--font_white);
+    --font_color3: var(--font_white);
+    --font_color4: var(--black);
+    --boxTransition: var(--red);
+}
+.high_contrast {
+    --background: var(--font_color2);
+    --boxblue: var(--black);
+    --boxyellow: var(--black);
+    --boxred: var(--black);
+    --font_color: var(--font_white);
+    --font_color2: var(--font_white);
+    --font_color3: var(--black);
+    --font_color4: var(--font_white);
+    --boxTransition: var(--font_white);
+}
+
+
+
+
+
+
+
+#transition {
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+    position: absolute;
+}
+#blue, #red, #yellow {
+    height: 100%;
+    width: 100%;
+}
+
+#blue {
+    background-color:var(--boxblue);
+}
+#red {
+    background-color:var(--boxTransition);
+}
+#yellow {
+    background-color:var(--boxyellow);
+}
