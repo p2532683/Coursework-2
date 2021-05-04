@@ -47,15 +47,20 @@
             <div class="gal-title">
                 <h1>All the Images</h1>
             </div>
-            <div class="flex">
-                <img src="img/pic.png">
-                <img src="img/pic.png">
-                <img src="img/pic.png">
-                <img src="img/pic.png">
+            <div id="gallery-photos" class="flex">
+                <img id="pic1" src="img/pic.png">
+                <img id="pic2" src="img/1.png">
+                <img id="pic3" src="img/4.png">
+                <img id="pic4"src="img/10.png">
             </div>
         </section>
         <div id="copyright"></div>
         <p>copyright stuff nobody cares about</p>
+        <div id="image-fs" style="display:none">
+            <div>
+            <img id="image-src" src="img/pic.png">
+        </div>
+        </div>
     </section>
     <div id="LargeScreen" class="body">
         <header class="header_main">
@@ -76,8 +81,8 @@
             </div>
     </section>
     <div class="optionButtonsLS">
-        <div id="themeBtn" class ="themebtn"onClick="highContrast()">Contrast: Color</div>
-        <div>Fontsize: High</div>
+        <div id="themeBtn" class ="themebtn"onClick="highContrast()">Contrast</div>
+        <div id="font-size" class="fontbtn" onClick="fontSize()">Fontsize</div>
     </div>
         <footer class="footer_main"></footer>
     </div>
@@ -94,8 +99,8 @@
             </div>
         </div>
         <div class="optionButtons">
-            <div id="themeBtn" class ="themebtn"onClick="highContrast()">Contrast: Color</div>
-            <div id="font-size" class="fontbtn" onClick="fontSize()">Fontsize: High</div>
+            <div id="themeBtn" class ="themebtn"onClick="highContrast()">Contrast</div>
+            <div id="font-size" class="fontbtn" onClick="fontSize()">Fontsize</div>
         </div>
     </section>
     <section id="transition" style="display: none"> <!--ANIMATION-->
