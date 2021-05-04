@@ -303,6 +303,7 @@ background-color: var(--boxred);
   line-height: 45px;
   }
   .menu_main_about a {
+    color: var(--font_color);
     display: inline-block;
   height: 75px;
   width: 284px;
