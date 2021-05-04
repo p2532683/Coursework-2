@@ -163,7 +163,7 @@ background-color: var(--boxred);
 /*                      MAIN PAGE              */
 /*       HEADER           */
 .body .header_main {
-    background-image: url(/img/Sunset.jpg);
+    background-image: url(/Coursework-2/img/Sunset.jpg);
     animation-name: example;
     animation-duration: 4s;
     animation-iteration-count: infinite;
