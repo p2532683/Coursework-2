@@ -347,6 +347,7 @@ background-color: var(--boxred);
   text-align: center;
   margin-top: 25%;
   margin-bottom: 0%;
+  color: white;
 }
 
 
@@ -522,13 +523,13 @@ background-color: var(--boxred);
 
 .info-boxes {
   position: relative;
-  height: 3em;
+  height: auto;
   color: var(--font_color4);
 
 }
 .info-boxes div {
   display: inline-block;
-  height: 1.6em;
+  height: auto;
   border-radius: 10px;
 
 }
@@ -543,12 +544,11 @@ background-color: var(--boxred);
 
 .info-boxes .like {
   background-color: var(--boxblue);
-  width: calc(25% + 20px);
+  min-width: calc(25% + 20px);
+  padding-left: 20px;
   transform: translate(-20px, 0);
 }
-.info-boxes .like p {
-  transform: translate(25px, 0);
-}
+
 .info-boxes .image-title {
   background-color: var(--boxred);
   float: right;
@@ -562,7 +562,8 @@ background-color: var(--boxred);
 .info-boxes .image-date {
   background-color: var(--boxyellow); 
   float: right;
-  width: calc(40% + 20px);
+  min-width: calc(40% + 20px);
+  padding-right: 20px;
   transform: translate(20px, 0);
 }
 
@@ -586,9 +587,10 @@ img {
 #gallery .gal-title {
   display: inline-block;
   background-color: var(--boxblue);
-  width: calc(50% + 20px);
+  min-width: calc(50% + 20px);
+  padding-left: 20px;
   border-radius: 20px;
-  height: 2em;
+  height: auto;
   transform: translate(-20px, 0);
 }
 
@@ -599,7 +601,7 @@ img {
   font-size: 1.5em;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: lighter;
-  transform: translate(25px, 0);
+  transform: translate(5px, 0);
 
 }
 
@@ -615,6 +617,37 @@ img {
   max-width: 44%;
 }
 
+#image-fs {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba( 0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  text-align: center;
+  z-index: 100;
+  opacity: 0;
+  transition: opacity 1s;
+}
+/*Code from https://stackoverflow.com/questions/7273338/how-to-vertically-align-an-image-inside-a-div, by Peter Mortensen*/
+#image-fs img{
+  width: 50%;
+  max-height: 100%;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+
+}
+#image-fs div {
+  height: 100%;
+  position: relative;
+}
+
 
 
 
@@ -624,18 +657,25 @@ img {
   object-fit: none;
   overflow: hidden;
 }
-
+.boxes {
+  color: var(--font_color);
+  font-family: Arial;
+}
 .boxes p{
-  display: inline-block;
-      color: var(--font_color);
-      font-family: Arial;
-      font-size: 2.5em;
+   display: inline-block;
+      font-size: 2.3em;
       font-weight: 700;
       line-height: 35px;
       margin: 0;
       margin-top: 0.1em;
 }
-
+.box1-p {
+  color: var(--font_color3);
+}
+.box1-a {
+  display: block;
+  margin-left: 20%;
+}
 .closed {
   transform: rotate(270deg) translatey(-10px);
   float: right;
@@ -669,6 +709,38 @@ img {
   color: var(--font_color2);
 }
 
+#box2-p {
+  font-size: 1em;
+  color: var(--font_color3);
+}
+#box2-h1 {
+  font-size: 1.5em;
+  display: block;
+  padding-bottom: 5px;
+  margin-top: 0;
+  color: var(--font_color3);
+}
+.box2  {
+  border-bottom: white solid 1px;
+  width: 100%;
+
+}
+.box3 {
+  padding-top: 5px;
+  border-bottom: 1px solid white;
+}
+#box3-p {
+  color: var(--font_color3);
+  font-size: 2em;
+}
+#box3-q {
+  color: var(--font_color3);
+  font-size: 1.7em;
+  display: block;
+  text-align: right;
+}
+
+
 
 
 
@@ -677,6 +749,8 @@ img {
   color: var(--font_color2);
   overflow: hidden;
   height: 0px;
+  width: 100%;
+  margin: 0;
   background-color: var(---backblue);
   transition: height 1s;
 }
@@ -690,7 +764,8 @@ img {
 }
 
 #box-closed img {
-  width: 15%;
+  width: 20%;
+  margin-top: 0.1em;
 }
 #boxed-closed p {
   font-size: 1.5em;
@@ -761,7 +836,7 @@ scrollbar-width: none;  /* Firefox */
     text-align: right;
     width: 350px;
     margin-right: 40px;
-    transform: translate(-70px, 15px);
+    transform: translate(-15px, 15px);
 
   }
   .menu_main_about {
@@ -797,7 +872,10 @@ scrollbar-width: none;  /* Firefox */
     display: none;
     height: auto;
   }
-
+  #image-fs {
+    width: 70vw;
+    height: 100vh;
+  }
 
 
 

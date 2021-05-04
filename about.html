@@ -5,15 +5,12 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-    <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <script defer src="js/menu.js"></script>
     <script defer src="js/transition.js"></script>
 
 
-    <title>BE THE CHANGE</title>
+    <title>About</title>
 </head>
 <body class="color">
     <section id="body">
@@ -69,6 +66,10 @@
                 </div>
             </div>
     </section>
+    <div class="optionButtonsLS">
+        <div id="themeBtn" class ="themebtn"onClick="highContrast()">Contrast</div>
+        <div id="font-size" class="fontbtn" onClick="fontSize()">Fontsize</div>
+    </div>
         <footer class="footer_main"></footer>
     </div>
     <section id="menu" style="display: none">
@@ -84,8 +85,8 @@
             </div>
         </div>
         <div class="optionButtons">
-            <div id="themeBtn">Contrast: Color</div>
-            <div>Fontsize: High</div>
+            <div id="themeBtn" class ="themebtn"onClick="highContrast()">Contrast</div>
+            <div id="font-size" class="fontbtn" onClick="fontSize()">Fontsize</div>
         </div>
     </section>
     <section id="transition" style="display: none"> <!--ANIMATION-->

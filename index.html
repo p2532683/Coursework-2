@@ -6,7 +6,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-    <script defer src="js/transition.js"></script>
     <title>BE THE CHANGE</title>
 </head>
 <body>
@@ -50,15 +49,17 @@
         <div id="red"></div>
         <div id="yellow" class="AboutStart"></div>
     </section>
-
+    <div id="LargeScreen">
+    </div>
  </div>
 <script defer>
     switchPage = () => {
         console.log(window.screen.width);
-        if (window.screen.width >= 1400) {window.location.href = "/Coursework-2/about.html";} // Compairing screensize to maximum mobile veiw size. if screen is bigger automatically go to the next page
+        if (window.screen.width >= 1400) {window.location.href = "/about.html";} // Compairing screensize to maximum mobile veiw size. if screen is bigger automatically go to the next page
         };
 
     setTimeout(switchPage, 50)
 </script>
+<script defer src="js/transition.js"></script>
 </body>
 </html>

@@ -16,12 +16,12 @@ open = (evt) => {
         console.log(target.previousElementSibling);
 
         parent.nextElementSibling.className = "box-open"; //openign the box
-        parent.nextElementSibling.style.height = "10em";
+        parent.nextElementSibling.style.height = "auto";
         target.previousElementSibling.style.transform = "rotate(90deg) translatey(10px)"; //rotating the arrow
 
     } else {
         parent.nextElementSibling.className = "box-closed";
-        parent.nextElementSibling.style.height = "0em";
+        parent.nextElementSibling.style.height = "0px";
         target.previousElementSibling.style.transform = "rotate(270deg) translatey(-10px)";
     }
     
