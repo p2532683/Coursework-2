@@ -1,5 +1,5 @@
 var slideImage = ["img/1-11.png", "img/1-1.png", "img/1-2.png", "img/1-3.png", "img/1-4.png", "img/1-5.png", "img/1-6.png", "img/1-7.png", "img/1-8.png", "img/1-9.png", "img/1-10.png"];
-let slideName = ["155", "45", "158", "489", "165", "165", "25","135", "623", "62", "11"];
+let slideName = ["Driving Through the night", "Construction", "Trainyard", "Portrait", "City view 1", "City view 2", "City View Portrait","City view 3", "Towers", "Lonely car", "Spooky road"];
 let slideDate = ["15.04.2019", "18.11.2019", "16.01.2018", "25.04.2016", "15.04.2019", "18.11.2019", "16.01.2018", "25.04.2016", "15.04.2016", "18.11.2011", "16.01.2015"];
 let slideLikes = ["155", "45", "158", "489", "165", "165", "25","135", "623", "62", "11"];
 var currentImage = 0;

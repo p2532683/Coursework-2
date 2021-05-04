@@ -7,13 +7,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  
     <title>BE THE CHANGE</title>
+    <script defer src="js/transition.js"></script>
 </head>
 <body>
  <div id="body" class="body">
 
-     <header class="header_main">
+     <header class="header_main" id="header_main">
          <h1 >BE THE CHANGE</h1>
-         <h2>make most of the little things</h2>
+         <h2 id="header_main-h2">make most of the little things</h2>
      </header>
 
      <section id="quote clearfix" class="quote_ref">
@@ -32,18 +33,19 @@
 
      <section class="menu_main">
             <div id="menu_main">
-                <div class="menu_main_about"><a href="about.html">About</a>
-                    <div class="menu_main_gallery"><a href="Gallery.html">Gallery</a>
+                <div class="menu_main_about"><a onClick="aboutT()">About</a>
+                    <div class="menu_main_gallery"><a onClick="galleryT()">Gallery</a>
                         <div class="menu_main_contacts">
-                          <a href="Contacts.html">Sponsers</a>
+                          <a onClick="contactT()">Contacts</a>
                         </div>
-                        <a href="Gallery.html">Gallery</a>
+                        <a onClick="galleryT()">Gallery</a>
                     </div>
-                    <a a href="about.html">About</a>
+                    <a onClick="aboutT()">About</a>
                 </div>
             </div>
     </section>
-     <footer class="footer_main"></footer>
+     <footer class="footer_main"> </footer>
+    </div>
      <section id="transition" style="display: none"> <!--ANIMATION-->
         <div id="blue"></div>
         <div id="red"></div>
@@ -51,15 +53,15 @@
     </section>
     <div id="LargeScreen">
     </div>
+    <div id="menu"></div>
  </div>
-<script defer>
+<script>
     switchPage = () => {
         console.log(window.screen.width);
-        if (window.screen.width >= 1400) {window.location.href = "/about.html";} // Compairing screensize to maximum mobile veiw size. if screen is bigger automatically go to the next page
+        if (window.screen.width >= 1400) {window.location.href = "/Coursework-2/about.html";} // Compairing screensize to maximum mobile veiw size. if screen is bigger automatically go to the next page
         };
 
     setTimeout(switchPage, 50)
 </script>
-<script defer src="js/transition.js"></script>
 </body>
 </html>

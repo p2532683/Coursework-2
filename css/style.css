@@ -72,11 +72,11 @@ a {
 .menu_l_about {
 position: relative;
 height: 100%;
-width: 95%;
+width: 100%;
 border-radius: 20px;
 background-color: var(--boxyellow);
 box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5), 0 2px 4px 0 rgba(0,0,0,0.5);
-font-size: 4em;
+font-size: 3em;
 line-height: 45px;
 }
 .menu_l_about a {
@@ -171,7 +171,8 @@ background-color: var(--boxred);
     animation-timing-function: ease-in-out;
     margin: 0;
     color: var(--font_color2);
-    height: 25vh;
+    min-height: 25vh;
+    height: auto;
     position: relative;
     font-family: 'Noto Sans JP', sans-serif;;
 }
@@ -275,19 +276,22 @@ background-color: var(--boxred);
 
   
   .menu_main {
-    display: inline-block;
-    width: 95%;
+    display: block;
+   /* width: 95%; */
     margin-top: 50px;
+    transform: translatey(50px);
   }
   
   
-  #menu #menu_main {
+#menu_main {
    /* height: 300px;*/ 
     font-family: Arial;
-    transform: translate(-50px, calc(90vh - 400px));
+    transform: translatex(-20px);
     text-decoration: none; 
     display: inline-block;
     width: 95%;
+    margin-top: 50px;
+    padding-bottom: 100px;
   }
   .menu_main_about {
   position: relative;
@@ -295,7 +299,7 @@ background-color: var(--boxred);
   border-radius: 20px;
   background-color: var(--boxyellow);
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5), 0 2px 4px 0 rgba(0,0,0,0.5);
-  font-size: 4em;
+  font-size: 3em;
   line-height: 45px;
   }
   .menu_main_about a {
@@ -305,7 +309,7 @@ background-color: var(--boxred);
   color: #666;
   font-family: Arial;
   margin:0;
-  transform: translate(50px, 7px);
+  transform: translate(20px, 7px);
   
   }
   .menu_main_gallery{ 
@@ -552,7 +556,8 @@ background-color: var(--boxred);
 .info-boxes .image-title {
   background-color: var(--boxred);
   float: right;
-  width: calc(50% + 20px);
+  min-width: calc(50% + 30px);
+  max-width: calc(52% + 30px);
   transform: translate(20px, 0);
 }
 .info-boxes .image-title p {
@@ -906,4 +911,19 @@ scrollbar-width: none;  /* Firefox */
     height: 100vw;
   }
  
+}
+
+@media only screen and (max-width: 335px) {
+  #header_main {
+    min-height: 35vh;
+  }
+  #header_main-h2 {
+    top: 80%;
+  }
+}
+
+@media only screen and (max-height: 700px) {
+  #body #menu-button{
+    height: 10vh;
+  }
 }
