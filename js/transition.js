@@ -29,7 +29,7 @@ aboutT = () => {
     setTimeout(()=> {blue.transform = "translate(-100vw, 0vh)"}, 2);
     setTimeout(()=> {red.transform = "translate(-100vw, -100vh)"}, 200); 
     setTimeout(()=> {yellow.transform = "translate(-100vw, -200vh)"}, 400); //making the animation
-    setTimeout(()=> {window.location.href = "/about.html";}, 900); //redirecting the user after animation
+    setTimeout(()=> {window.location.href = "/Coursework-2/about.html";}, 900); //redirecting the user after animation
 }
 
 
@@ -52,7 +52,7 @@ aboutT = () => {
       setTimeout(()=> {blue.transform = "translate(100vw, 0vh)"}, 2);
       setTimeout(()=> {red.transform = "translate(100vw, -100vh)"}, 200); 
       setTimeout(()=> {yellow.transform = "translate(100vw, -200vh)"}, 400);
-      setTimeout(()=> {window.location.href = "/Gallery.html";}, 900);
+      setTimeout(()=> {window.location.href = "/Coursework-2/Gallery.html";}, 900);
 }
 
     contactT = () => {
@@ -73,7 +73,7 @@ aboutT = () => {
         setTimeout(()=> {blue.transform = "translatey(100vh)"}, 2);
         setTimeout(()=> {red.transform = "translatey(100vh)"}, 200); 
         setTimeout(()=> {yellow.transform = "translatey(200vh)"}, 400);
-        setTimeout(()=> {window.location.href = "/Contacts.html";}, 1100);
+        setTimeout(()=> {window.location.href = "/Coursework-2/Contacts.html";}, 1100);
 }
 
 
@@ -85,9 +85,18 @@ let themeSelect = document.getElementsByClassName("themebtn")
 let theme = localStorage.getItem("theme");
 let font = localStorage.getItem("font")
 console.log(localStorage.getItem("theme"));
-if(theme == "high_contrast") {
-    bodys.classList.replace('color', "high_contrast");
+
+if(theme == "high_contrast") { //Checking if High contrast mode had been selected
+    if(bodys.classList.length == 1) { //checking if there is a theme already applied
+        bodys.classList.replace('color', "high_contrast"); //replacing color theme with high contrast
+    } else { 
+        bodys.classList.add("high_contrast"); //if no body theme has been set, add high constrast
+    }
+}else if(bodys.classList.length == 0) { //if there is no body theme and high contrast theme is not selected
+    bodys.classList.add('color');   // add the color theme to the body
 }
+
+
 highContrast = () =>{
     if(bodys.classList.contains("color")){    //Checking for the current theme of the the body
     bodys.classList.replace("color", "high_contrast");  //Replacing the class on the body
@@ -102,29 +111,25 @@ highContrast = () =>{
     }
 }
 let i = 0;
-
 fontSize = () => {
     console.log("fontSize " + bodys.style.fontSize);
     i++;                // Simple Counter system
     console.log(i);
    if(i == 1){
-       bodys.style.fontSize = "150%";
-       localStorage.setItem('font', "1");
-       document.getElementByClassName("fontbtn").innerHTML = "Font Size: LARGE";
+       bodys.style.fontSize = "125%";   // Applying the font size
+       localStorage.setItem('font', "1");   //Saving font size to local storage 
    } 
     if (i == 2) {
-       bodys.style.fontSize = "75%";
-       localStorage.setItem('font', "2");
-       document.getElementByClassName("fontbtn").innerHTML = "Font Size: SMALL";
+       bodys.style.fontSize = "75%"; // Applying the font size
+       localStorage.setItem('font', "2"); //Saving font size to local storage 
    } 
    if (i == 3) {
-       bodys.style.fontSize = "100%";
-       localStorage.setItem('font', "3");
-       document.getElementsByClassName("fontbtn").innerHTML = "Font Size: MED";
+       bodys.style.fontSize = "100%"; // Applying the font size
+       localStorage.setItem('font', "3"); //Saving font size to local storage 
        i = 0;  // return back to beginning
    } 
    else {
-       console.log("font error")
+       console.log("font error") // if all fails. console will read out "font error"
    }
 }
 
